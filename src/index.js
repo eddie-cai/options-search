@@ -5,7 +5,10 @@ import SearchBar from './components/SearchBar';
 
 class App extends React.Component {
     handleTermChange(term) {
-        console.log(term);
+        const request = require('request');
+        const url = `https://finance.yahoo.com/quote/${term}/options?p=${term}`
+
+        
     }
 
     render() {
