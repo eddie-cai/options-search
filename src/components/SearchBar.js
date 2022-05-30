@@ -1,6 +1,9 @@
 import React from 'react';
 
 class SearchBar extends React.Component {
+    /*
+    * This is a simple search bar
+    * */
     constructor() {
         super();
         this.state = { term: '' }

@@ -1,8 +1,6 @@
 import React from 'react'
 
 const Table = (props) => {
-    console.log("what");
-    console.log(props.options);
     return (
         <div className="Table">
             <table>
