@@ -1,5 +1,13 @@
 # YAHOO Finance Options Data React App
-This project pulls data from Yahoo Finance's options data. 
+This project pulls data from Yahoo Finance's options data. Specifically, we will be pulling the following columns:
+* `Contract Name`
+* `Strike`
+* `Last Price`
+* `Bid`
+* `Ask`
+* `Change`
+
+I used the `axios` library to fetch the data from a Yahoo Finance API. This was easier than webscraping, and also dodged issues with CORS when using `XMLHTMLRequests`. 
 
 ## Prerequisites 
 You will need `Node.js`. 
