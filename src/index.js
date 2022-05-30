@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import SearchBar from './components/SearchBar';
 import Table from './components/Table'
 import './styles/Table.css'
+import './styles/SearchBar.css'
 
 class App extends React.Component {
     constructor() {
@@ -41,8 +42,17 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <SearchBar onTermChange={this.handleTermChange} />
-                <Table options={this.state.options_calls} />
+                <div>
+                    <SearchBar onTermChange={this.handleTermChange} />
+                </div>
+
+                <div>
+                    <h1 style={{marginTop: "150px"}}>CALLS</h1>
+                    <Table options={this.state.options_calls} />
+                    <h1>PUTS</h1>
+                    <Table options={this.state.options_puts} />
+                </div>
+
             </div>
         );
     }

@@ -13,8 +13,11 @@ class SearchBar extends React.Component {
 
     render() {
         return (
-            <div className="search">
-                <input onChange={event => this.onInputChange(event.target.value)} />
+
+            <div className="wrap">
+                <div className="search">
+                    <input type="text" className="searchTerm" placeholder="Enter your ticker here..." onChange={event => this.onInputChange(event.target.value)}/>
+                </div>
             </div>
         );
     }
